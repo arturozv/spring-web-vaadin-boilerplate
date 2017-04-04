@@ -8,7 +8,7 @@ env:
     - SPRING_PROFILES_ACTIVE=ci
 
 script:
-  - mvn clean install
+  - ./mvnw clean install
 
 notifications:
   email: false
