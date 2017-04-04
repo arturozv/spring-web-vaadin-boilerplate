@@ -1,0 +1,11 @@
+spring:
+    profiles:
+        active: tst
+    data:
+        mongodb:
+            hosts:
+              - 192.168.99.100
+            port: 32768
+            database: test
+            connectionsPerHost: 4
+            readPreference: primaryPreferred

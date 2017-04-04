@@ -1,0 +1,18 @@
+server:
+    port: 8081
+
+security:
+    basic:
+        enabled: false
+
+spring:
+    batch:
+        initializer: 
+            enabled: false
+        job:
+            enabled: false
+    mvc:
+        favicon:
+            enabled: false
+    jackson:
+            serialization.indent_output: true

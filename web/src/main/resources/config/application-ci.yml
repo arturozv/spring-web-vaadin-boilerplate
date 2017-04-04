@@ -1,0 +1,11 @@
+spring:
+    profiles:
+        active: ci
+    data:
+        mongodb:
+            hosts:
+              - 127.0.0.1
+            port: 27017
+            database: test
+            connectionsPerHost: 4
+            readPreference: primaryPreferred

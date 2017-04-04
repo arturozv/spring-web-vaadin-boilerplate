@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<body>
+
+Date: {{time}}, time: {{time.time}}
+<br><br>
+
+
+{{#i18n}}test.entities{{/i18n}} <br>
+
+{{#entities}}
+<b>{{name}}</b><br>
+{{/entities}}
+
+{{^entities}}
+<p>No entities found</p>
+{{/entities}}
+
+</body>
+
+</html>
