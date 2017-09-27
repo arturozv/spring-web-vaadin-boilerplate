@@ -4,7 +4,7 @@ spring:
     data:
         mongodb:
             hosts:
-              - 192.168.99.100
+              - localhost
             port: 32768
             database: test
             connectionsPerHost: 4

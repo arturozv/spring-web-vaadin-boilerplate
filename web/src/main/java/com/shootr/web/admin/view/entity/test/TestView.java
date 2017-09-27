@@ -63,7 +63,7 @@ public class TestView extends VerticalLayout implements View {
         mainLayout.setMargin(true);
         mainLayout.setSpacing(true);
 
-        grid.setHeight(200, Unit.PIXELS);
+        grid.setHeight(400, Unit.PIXELS);
         grid.setWidth(100, Unit.PERCENTAGE);
         grid.setSelectionMode(Grid.SelectionMode.SINGLE);
         grid.addColumn(Test::getId).setCaption("id");
@@ -80,8 +80,8 @@ public class TestView extends VerticalLayout implements View {
 
         removeWordButton.addClickListener(e -> {
             if (grid.getSelectedItems() != null && !grid.getSelectedItems().isEmpty()) {
-                Test manufacturer = grid.getSelectedItems().iterator().next();
-                service.delete(manufacturer.getId());
+                Test test = grid.getSelectedItems().iterator().next();
+                service.delete(test.getId());
                 reloadGrid(null);
             }
         });
